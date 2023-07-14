@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card-login{
+    border: 1px solid;
+    padding: 50px;
+    box-shadow: 5px 10px aquamarine;
+    background-color: cadetblue;
+    border: 1px solid whitesmoke;
+}
+.login{
+    color: aquamarine;
+    font-size: 32px;
+}
+.email,.password{
+    display: flex;
+    flex-direction: column;
+}
+.submit{
+    margin-top: 10px;
+}
+.input-email,.input-password{
+    height: 30px;
+    width: 300px;
+    font-size: 16px;
+    border-color: aquamarine;
+    border-width: 0.5px;
+}
+.input-submit{
+    height: 35px;
+    width: 300px;
+    font-size: 16px;
+    background-color: aquamarine;
+    border: 1px solid white;
+}
+.label-email,.label-password{
+    font-size: 18px;
+    color: white;
+}
