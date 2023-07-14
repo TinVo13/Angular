@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
 }
 .card-login{
     border: 1px solid;
@@ -11,10 +11,12 @@
     box-shadow: 5px 10px aquamarine;
     background-color: cadetblue;
     border: 1px solid whitesmoke;
+    border-radius: 20px;
 }
 .login{
     color: aquamarine;
     font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .email,.password{
     display: flex;
@@ -32,7 +34,6 @@
 }
 .input-submit{
     height: 35px;
-    width: 300px;
     font-size: 16px;
     background-color: aquamarine;
     border: 1px solid white;

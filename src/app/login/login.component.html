@@ -1,24 +1,26 @@
 <div class="container">
     <div class="card-login">
-        <h2 class="login">Login</h2>
-        <form class="form-login" onsubmit="handleSubmit()">
+        <h2 class="login"><i>Lo</i>gin</h2>
+        <form class="form-login" [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
             <div class="email">
                 <label class="label-email" for="input-email">Email:</label>
-                <input class="input-email" name="email" type="email" placeholder="Your email!" required />
+                <input class="input-email" name="email" type="email" formControlName="email" placeholder="Your email!" required />
             </div>
-            <br>
             <div class="password">
                 <label class="label-password" for="input-password">Password:</label>
-                <input class="input-password" name="password" type="password" placeholder="Your password!" required />
+                <input class="input-password" name="password" type="password" minlength="8" formControlName="password" placeholder="Your password!" required />
+                <!-- <span *ngIf="checkoutForm.invalid">
+                    <div *ngIf="checkoutForm.errors?.['required']">
+                        Password is required.
+                      </div>
+                      <div *ngIf="checkoutForm.errors?.['minlength']">
+                        Password must be at least 4 characters long.
+                      </div>
+                </span> -->
             </div>
             <div class="submit">
-                <input class="input-submit" type="submit" value="Submit" />
+                <input class="input-submit" type="submit" value="Submit"/>
             </div>
         </form>
     </div>
 </div>
-<script>
-    function handleSubmit() {
-        alert('ahdsdhas')
-    }
-</script>
